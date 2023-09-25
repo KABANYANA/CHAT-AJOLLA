@@ -2,7 +2,7 @@ const msgerForm = get(".msger-inputarea");
 const msgerInput = get(".msger-input");
 const msgerChat = get(".msger-chat");
 
-const BOT_IMG = "/images/Lacto.png";
+const BOT_IMG = "../static/images/Lacto.png";
 const PERSON_IMG = "../static/images/mother.png";
 const BOT_NAME = "Ajolla";
 const PERSON_NAME = "You";
