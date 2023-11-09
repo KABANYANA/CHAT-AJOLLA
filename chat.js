@@ -13,12 +13,12 @@ const predefinedResponses = {
   "who developed you?": "Its Ajolla Inovelle Group",
   "goodbye": "Goodbye! Have a nice day!",
   "do you know a joke":"hhhhhh, You are funny",
-
-  "What is the role of a lactation consultant?" :"A lactation consultant is a professional who provides support and guidance to new mothers in breastfeeding and lactation-related issues.",
-"How can a lactation consultant help a first-time mother?" :"A lactation consultant can help a first-time mother with breastfeeding techniques, addressing any challenges or concerns, and providing education on proper latch, milk supply, and pumping.",
-"What are some common breastfeeding challenges faced by first-time mothers?" :"Some common challenges include sore nipples, low milk supply, engorgement, mastitis, and difficulty with latching",
-// "What are some tips for increasing milk supply?" :Tips for increasing milk supply include frequent breastfeeding or pumping, ensuring proper latch, staying hydrated, eating a balanced diet, and getting enough rest.
-// "How long should a first-time mother breastfeed her baby?" : The World Health Organization recommends exclusive breastfeeding for the first six months, followed by continued breastfeeding along with complementary foods for up to two years or beyond.
+  "what is your name": "lactomama",
+  "what is the role of a lactation consultant?" : "a lactation consultant is a professional who provides support and guidance to new mothers in breastfeeding and lactation-related issues.",
+"how can a lactation consultant help a first-time mother?" :"A lactation consultant can help a first-time mother with breastfeeding techniques, addressing any challenges or concerns, and providing education on proper latch, milk supply, and pumping.",
+"what are some common breastfeeding challenges faced by first-time mothers?":"Some common challenges include sore nipples, low milk supply, engorgement, mastitis, and difficulty with latching",
+"what are some tips for increasing milk supply?" :"Tips for increasing milk supply include frequent breastfeeding or pumping, ensuring proper latch, staying hydrated, eating a balanced diet, and getting enough rest.",
+"how long should a first-time mother breastfeed her baby?" : "The World Health Organization recommends exclusive breastfeeding for the first six months, followed by continued breastfeeding along with complementary foods for up to two years or beyond."
 // "What are some signs that a baby is getting enough breast milk?" :Signs include steady weight gain, six or more wet diapers a day, regular bowel movements, and contentment after feeding.
 // "Can a lactation consultant help with breastfeeding positions?" :Yes, a lactation consultant can demonstrate different breastfeeding positions that can help improve latch and comfort for both the mother and baby.
 // "What are some common misconceptions about breastfeeding?" :Some misconceptions include that breastfeeding is always easy, that formula is just as good as breast milk, and that breastfeeding will cause sagging breasts.
