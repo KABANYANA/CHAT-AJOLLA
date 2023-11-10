@@ -9,7 +9,7 @@ const PERSON_NAME = "You";
 
 const predefinedResponses = {
   "hello": "Hello there! How can I help you?",
-  "hi":"Hello there! How can I help you?",
+  "hi":"Hello there! How can I help?",
   "how are you": "I am fine until internet goes off",
   "who developed you?": "Its Ajolla Inovelle Group",
   "goodbye": "Goodbye! Have a nice day!",
