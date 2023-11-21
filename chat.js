@@ -4,7 +4,7 @@ const msgerChat = get(".msger-chat");
 
 const BOT_IMG = "../static/images/Lacto.png";
 const PERSON_IMG = "../static/images/mother.png";
-const BOT_NAME = "Ajolla";
+const BOT_NAME = "Lactomama";
 const PERSON_NAME = "You";
 
 const predefinedResponses = {
