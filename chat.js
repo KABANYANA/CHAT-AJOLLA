@@ -8,50 +8,119 @@ const BOT_NAME = "Lactomama";
 const PERSON_NAME = "You";
 
 const predefinedResponses = {
-  "hello": "Hello there! How can I help you?",
-  "hi":"Hello there! How can I help?",
-  "how are you": "I am fine until internet goes off",
+  "Muraho": "Muraho neze! Nabafasha gute?",
+  "Bite":"ni byiza! mwebwe mumeze mute?",
+  "mwaramutse": "Mwaramutse neza! Nabafasha gute",
+  "mwiriwe":"Mwiriwe neza! Nabafasha gute",
+  "Umeze ute":"Meze neza",
   "who developed you?": "Its Ajolla Inovelle Group",
-  "goodbye": "Goodbye! Have a nice day!",
-  "do you know a joke":"hhhhhh, You are funny",
+  "Murabeho": "Murabeho! Mugire umunsi mwiza!",
+  "Bye":"Bye! Mugire ibihe byiza",
   "what is your name": "lactomama",
-  "what is the role of a lactation consultant?" : "a lactation consultant is a professional who provides support and guidance to new mothers in breastfeeding and lactation-related issues.",
-"how can a lactation consultant help a first-time mother?" :"A lactation consultant can help a first-time mother with breastfeeding techniques, addressing any challenges or concerns, and providing education on proper latch, milk supply, and pumping.",
-"what are some common breastfeeding challenges faced by first-time mothers?":"Some common challenges include sore nipples, low milk supply, engorgement, mastitis, and difficulty with latching",
-"what are some tips for increasing milk supply?" :"Tips for increasing milk supply include frequent breastfeeding or pumping, ensuring proper latch, staying hydrated, eating a balanced diet, and getting enough rest.",
-"how long should a first-time mother breastfeed her baby?" : "The World Health Organization recommends exclusive breastfeeding for the first six months, followed by continued breastfeeding along with complementary foods for up to two years or beyond.",
- "what are some signs that a baby is getting enough breast milk?" :"Signs include steady weight gain, six or more wet diapers a day, regular bowel movements, and contentment after feeding.",
-"can a lactation consultant help with breastfeeding positions?" :"Yes, a lactation consultant can demonstrate different breastfeeding positions that can help improve latch and comfort for both the mother and baby.",
- "what are some common misconceptions about breastfeeding?" :"Some misconceptions include that breastfeeding is always easy, that formula is just as good as breast milk, and that breastfeeding will cause sagging breasts.",
-"how can a first-time mother prevent or treat sore nipples?" : "Proper latch, using lanolin cream, air-drying nipples after feeding, and using breast shells or nipple shields can help prevent or treat sore nipples.",
-"what are some benefits of breastfeeding for both the mother and baby?" :"Benefits for the baby include receiving optimal nutrition, improved immune system, reduced risk of infections, and bonding with the mother. Benefits for the mother include reduced risk of certain cancers, faster postpartum recovery, and bonding with the baby.",
-"can a lactation consultant help with breastfeeding after a C-section?" :"Yes, a lactation consultant can provide guidance on breastfeeding positions that are comfortable for mothers who have had a C-section and help address any challenges that may arise.",
-"what are some common myths about breastfeeding?" :" Some myths include that small breasts produce less milk, that breastfeeding is painful, and that breastfeeding will prevent the mother from getting pregnant.",
-"how can a first-time mother manage breastfeeding in public?":"A lactation consultant can provide tips on discreet breastfeeding techniques, using nursing covers or clothing, and finding comfortable and private spaces for feeding.",
-"what are some signs that a baby is not latching properly?": "Signs include pain or discomfort for the mother during feeding, clicking sounds while nursing, and poor weight gain for the baby.",
-"can a lactation consultant help with pumping and storing breast milk?":" Yes, a lactation consultant can provide guidance on proper pumping techniques, storage guidelines, and how to maintain milk supply while pumping.",
-"what are some common reasons for low milk supply?":" Some common reasons include ineffective latch, infrequent or inconsistent breastfeeding or pumping, certain medications, and high levels of stress.",
-"can a lactation consultant help with weaning a baby from breastfeeding?":"Yes, a lactation consultant can provide guidance on gradual weaning techniques and address any concerns or challenges that may arise during the process.",
-"what are some tips for breastfeeding twins or multiples?":" Tips include using a nursing pillow, feeding both babies simultaneously, seeking support from a lactation consultant, and ensuring an adequate milk supply through frequent feeding or pumping.",
-"can a lactation consultant help with breastfeeding after returning to work?":" Yes, a lactation consultant can provide guidance on maintaining milk supply, pumping schedules, and transitioning the baby to bottle feeding while still breastfeeding when together.",
-"what are some signs that a baby is not getting enough breast milk?": "Signs include excessive crying, poor weight gain, fewer wet diapers than usual, and signs of dehydration.",
-"can a lactation consultant help with breastfeeding positions for mothers with large breasts?" :"Yes, a lactation consultant can provide guidance on positions that are comfortable and effective for mothers with large breasts.",
-"what are some tips for managing engorgement?":" Tips include frequent breastfeeding or pumping, applying warm compresses before feeding, using cold compresses after feeding, and massaging the breasts to relieve pressure.",
-"can a lactation consultant help with breastfeeding after a premature birth?":" Yes, a lactation consultant can provide specialized support and guidance for mothers of premature babies, including techniques to stimulate milk production and strategies for feeding in the neonatal intensive care unit (NICU).",
-"what are some common breastfeeding positions?":"Common positions include cradle hold, cross-cradle hold, football hold, side-lying position, and laid-back breastfeeding.",
-"can a lactation consultant help with breastfeeding while dealing with postpartum depression?" :"Yes, a lactation consultant can provide emotional support, resources, and guidance on breastfeeding techniques that can help alleviate symptoms of postpartum depression.",
-"what are some tips for managing oversupply of breast milk?" :"Tips include feeding on one breast per feeding, using breast compression to control flow, and pumping for comfort rather than to empty the breasts completely.",
-"can a lactation consultant help with breastfeeding after breast surgery?":" Yes, a lactation consultant can provide guidance on breastfeeding after breast surgery, including techniques to improve latch and milk transfer.",
-"what are some tips for breastfeeding in the early days after birth?" :" Tips include frequent feeding, ensuring proper latch, seeking support from a lactation consultant, and taking care of oneself by staying hydrated and getting enough rest.",
-"can a lactation consultant help with transitioning from breastfeeding to solid foods?" :"Yes, a lactation consultant can provide guidance on introducing solid foods, maintaining breastfeeding alongside solids, and addressing any concerns or challenges that may arise.",
-"what are some tips for managing a baby's reflux while breastfeeding?":" Tips include feeding in an upright position, burping frequently during and after feeds, and avoiding overfeeding.",
-"can a lactation consultant help with breastfeeding after a tongue tie or lip tie revision?" :"Yes, a lactation consultant can provide guidance on proper latch and feeding techniques after a tongue tie or lip tie revision, ensuring optimal milk transfer.",
-"what are some tips for breastfeeding a baby with a cleft lip or palate?":" Tips include using specialized feeding devices, seeking support from a lactation consultant experienced in cleft feeding, and maintaining milk supply through pumping.",
-"can a lactation consultant help with breastfeeding after a baby's hospitalization?" :"Yes, a lactation consultant can provide guidance on maintaining milk supply, pumping schedules, and techniques to support breastfeeding when the baby is in the hospital.",
-"what are some tips for managing a baby's food allergies while breastfeeding?":" Tips include eliminating allergenic foods from the mother's diet, seeking guidance from a healthcare professional, and monitoring the baby's symptoms.",
-"can a lactation consultant help with breastfeeding after a baby's tongue or lip tie diagnosis?":" Yes, a lactation consultant can provide guidance on feeding techniques, referral to specialists for evaluation and revision, and ongoing support throughout the process.",
-"what are some tips for breastfeeding a baby with a high palate?":" Tips include experimenting with different breastfeeding positions, seeking guidance from a lactation consultant, and ensuring proper latch and milk transfer.",
-"can a lactation consultant help with breastfeeding after a baby's NICU stay?":"Yes, a lactation consultant can provide guidance on pumping, milk storage, transitioning to breastfeeding, and addressing any challenges that may arise after a baby's NICU stay."
+ "Hello": "Hello there! How can I help you?",
+"Hi": "Hello there! How can I help?",
+"How are you": "I am fine until internet goes off",
+"Ni ikihe kigaragaza ko mfite ihungabana ryo nyuma yo kubyara?": "Ibimenyetso birimo kumva wihebye, guhangayika cyane, no kutiyumvamo umwana.",
+"Ni nini kinachoonyesha nina huzuni baada ya kujifungua?": "Dalili ni pamoja na huzuni nyingi, wasiwasi mwingi, na kutohisi upendo kwa mtoto.",
+"ni ryari nkwiye gushaka ubufasha bw'umwuga?": "Niba ibimenyetso byibasiye ubuzima bwawe bwa buri munsi.",
+"Ni lini niitafute msaada wa kitaalamu?": "Ikiwa dalili zinathiri maisha yako ya kila siku.",
+"Ni izihe nama zagufasha kurwanya ihungabana ryo nyuma yo kubyara?": "Kuganira n'inshuti cyangwa umuryango, gukora imyitozo ngororamubiri, no kuruhuka bihagije.",
+"Ni ushauri gani unaweza kusaidia kupambana na huzuni baada ya kujifungua?": "Kuzungumza na marafiki au familia, kufanya mazoezi, na kupumzika vya kutosha.",
+"Ni gute umuryango wanjye wambera inkunga?": "Kumva neza ibibazo byawe no kukunganira mu mirimo y'urugo.",
+"Familia yangu inaweza kunisaidiaje?": "Kusikiliza matatizo yako na kukusaidia kazi za nyumbani.",
+  "Ni ryari nkwiye kubona muganga ku ihungabana ryo nyuma yo kubyara?": "Niba ibimenyetso byarushijeho kuba bibi cyangwa bidashira.",
+"Ni lini niende kwa daktari kuhusu huzuni baada ya kujifungua?": "Ikiwa dalili zinakuwa mbaya zaidi au haziondoki.",
+"Ni izihe ngamba zo kwirinda ihungabana ryo nyuma yo kubyara?": "Gufata umwanya wo kuruhuka, kubona ubufasha igihe cyose ukeneye, no gukora imyitozo.",
+"Ni hatua zipi za kuzuia huzuni baada ya kujifungua?": "Kupumzika, kupata msaada wakati wowote unahitaji, na kufanya mazoezi.",
+"Ni gute inshuti zanjye zanyunganira?": "Kumva neza ibibazo byawe no kukunganira mu bikorwa bya buri munsi.",
+"Marafiki zangu zinaweza kunisaidiaje?": "Kusikiliza matatizo yako na kukusaidia katika shughuli za kila siku.",
+"Ni izihe nama zafasha abagabo kumenya ko abagore babo bafite ihungabana ryo nyuma yo kubyara?": "Kwita ku mihindagurikire y'imico n'imyitwarire y'abagore babo no kumva ibibazo byabo.",
+"Ni ushauri gani unaweza kusaidia wanaume kujua kama wake zao wana huzuni baada ya kujifungua?": "Kuzingatia mabadiliko ya tabia na mwenendo wa wake zao na kusikiliza matatizo yao.",
+"Ni ryari ihungabana ryo nyuma yo kubyara rishobora kugaragara?": "Rishobora kugaragara mu minsi mike cyangwa amezi nyuma yo kubyara.",
+"Ni lini huzuni baada ya kujifungua inaweza kutokea?": "Inaweza kutokea siku chache au miezi baada ya kujifungua.",
+"Ni gute nakwita ku buzima bwanjye nyuma yo kubyara?": "Kurya neza, gukora imyitozo ngororamubiri, no kubona umwanya wo kuruhuka.",
+"Ninawezaje kutunza afya yangu baada ya kujifungua?": "Kula vizuri, kufanya mazoezi, na kupata muda wa kupumzika.",
+"Ni izihe ngamba zo kwirinda gusubira mu buzima busanzwe nyuma yo kubyara?": "Kugabanya umuvuduko, kubona ubufasha, no gukora gahunda itunganye.",
+"Ni hatua zipi za kurudi katika maisha ya kawaida baada ya kujifungua?": "Kupunguza kasi, kupata msaada, na kufanya ratiba nzuri.",
+"Ni ryari nkwiye gutangira imyitozo nyuma yo kubyara?": "Nyuma yo kubona uburenganzira bwa muganga wawe.",
+"Ni lini niweze kuanza kufanya mazoezi baada ya kujifungua?": "Baada ya kupata ruhusa kutoka kwa daktari wako.",
+"Ni gute umugabo wanjye yambera inkunga mu gihe cy'ihungabana ryo nyuma yo kubyara?": "Kumva ibibazo byawe, kukunganira mu mirimo y'urugo, no kukwibutsa ko uri umubyeyi mwiza.",
+"Mume wangu anaweza kunisaidiaje wakati wa huzuni baada ya kujifungua?": "Kusikiliza matatizo yako, kukusaidia kazi za nyumbani, na kukukumbusha kuwa wewe ni mzazi mzuri.",
+"Ni izihe ngamba zo gukumira ihungabana ryo nyuma yo kubyara?": "Kurya indyo yuzuye, gukora imyitozo ngororamubiri, no gushaka ubufasha igihe cyose ukeneye.",
+"Ni hatua zipi za kuzuia huzuni baada ya kujifungua?": "Kula chakula kamili, kufanya mazoezi, na kutafuta msaada wakati wowote unahitaji.",
+"Ni gute nshobora kuganiriza muganga ku bibazo byanjye by'ihungabana ryo nyuma yo kubyara?": "Kubwira muganga ibimenyetso ufite, uko wiyumva, n'uko bikugiraho ingaruka.",
+"Ninawezaje kuzungumza na daktari kuhusu matatizo yangu ya huzuni baada ya kujifungua?": "Mwambie daktari dalili ulizonazo, jinsi unavyohisi, na jinsi zinavyokuathiri.",
+"Ni izihe nama zagufasha kugabanya ihungabana ryo nyuma yo kubyara?": "Gufata umwanya wo kuruhuka, gukora imyitozo ngororamubiri, no kuganira n'abandi babyeyi.",
+"Ni ushauri gani unaweza kusaidia kupunguza huzuni baada ya kujifungua?": "Kupumzika vya kutosha, kufanya mazoezi, na kuzungumza na wazazi wengine.",
+"Ni ryari nkwiye kuganira n'umugabo wanjye ku ihungabana ryo nyuma yo kubyara?": "Igihe cyose wumva ukeneye inkunga ye kandi utisanzuye.",
+"Ni lini niweze kuzungumza na mume wangu kuhusu huzuni baada ya kujifungua?": "Wakati wowote unahitaji msaada wake na hujisikii vizuri.",
+"Ni izihe nama z'ingenzi ku babyeyi bashya bafite ihungabana ryo nyuma yo kubyara?": "Gusaba ubufasha, kuganira n'abandi babyeyi, no kwita ku buzima bwawe.",
+"Ni ushauri gani muhimu kwa wazazi wapya walio na huzuni baada ya kujifungua?": "Kuomba msaada, kuzungumza na wazazi wengine, na kujitunza.",
+"Ni gute nshobora kwirinda kugwa mu gahinda k'ihungabana ryo nyuma yo kubyara?": "Kwitabira ibikorwa bishimishije, gukora imyitozo ngororamubiri, no kubona ubufasha igihe cyose ukeneye.",
+"Ninawezaje kuepuka huzuni baada ya kujifungua?": "Kushiriki katika shughuli za kufurahisha, kufanya mazoezi, na kupata msaada wakati wowote unahitaji.",
+"Ni izihe nama zafasha umuryango wanjye kumfasha mu gihe cy'ihungabana ryo nyuma yo kubyara?": "Kumva neza ibibazo byawe, kukunganira mu mirimo y'urugo, no kukwereka urukundo.",
+"Ni ushauri gani unaweza kusaidia familia yangu kunisaidia wakati wa huzuni baada ya kujifungua?": "Kusikiliza matatizo yako, kukusaidia kazi za nyumbani, na kukuonyesha upendo.",
+"Ni ryari nkwiye kuganira n'umuganga ku byerekeye ihungabana ryo nyuma yo kubyara?": "Igihe cyose wumva ibimenyetso byiyongera cyangwa bidashira.",
+"Ni lini niweze kuzungumza na daktari kuhusu huzuni baada ya kujifungua?": "Wakati wowote unahisi dalili zinaongezeka au haziondoki.",
+"Ni gute nshobora gusaba ubufasha mu gihe cy'ihungabana ryo nyuma yo kubyara?": "Kuganira n'umuryango, inshuti, cyangwa umujyanama w'ubuzima bwo mu mutwe.",
+"Ninawezaje kupata msaada wakati wa huzuni baada ya kujifungua?": "Kuzungumza na familia, marafiki, au mshauri wa afya ya akili.",
+"Ni izihe ngamba zo kwirinda ihungabana ryo nyuma yo kubyara?": "Gufata umwanya wo kuruhuka, kubona ubufasha igihe cyose ukeneye, no gukora imyitozo.",
+"Ni hatua zipi za kuzuia huzuni baada ya kujifungua?": "Kupumzika vya kutosha, kupata msaada wakati wowote unahitaji, na kufanya mazoezi.",
+"Ni ryari nkwiye gutangira kwiyitaho mu gihe cyo kubyara?": "Ushobora gutangira kwiyitaho igihe cyose ukimara kumva ubikeneye.",
+"Ni lini niweze kuanza kujitunza wakati wa kujifungua?": "Unaweza kuanza kujitunza wakati wowote unapohisi unahitaji.",
+"Ni izihe nama z'ubuzima zagufasha kurwanya ihungabana ryo nyuma yo kubyara?": "Kurya indyo yuzuye, gukora imyitozo ngororamubiri, no kuganira n'abandi babyeyi.",
+"Ni ushauri gani wa afya unaweza kusaidia kupambana na huzuni baada ya kujifungua?": "Kula chakula kamili, kufanya mazoezi, na kuzungumza na wazazi wengine.",
+"Ni ryari nkwiye gushaka ubufasha bw'umwuga?": "Niba ibimenyetso byibasiye ubuzima bwawe bwa buri munsi.",
+"Ni lini niitafute msaada wa kitaalamu?": "Ikiwa dalili zinathiri maisha yako ya kila siku.",
+"Ni gute nakwita ku buzima bwanjye nyuma yo kubyara?": "Kurya neza, gukora imyitozo ngororamubiri, no kubona umwanya wo kuruhuka.",
+"Ninawezaje kutunza afya yangu baada ya kujifungua?": "Kula vizuri, kufanya mazoezi, na kupata muda wa kupumzika.",
+"Ni izihe nama zafasha umugabo wanjye kumfasha mu gihe cy'ihungabana ryo nyuma yo kubyara?": "Kumva neza ibibazo byawe, kukunganira mu mirimo y'urugo, no kukwereka urukundo.",
+"Ni ushauri gani unaweza kusaidia mume wangu kunisaidia wakati wa huzuni baada ya kujifungua?": "Kusikiliza matatizo yako, kukusaidia kazi za nyumbani, na kukuonyesha upendo.",
+"Ni ryari nkwiye gushaka ubufasha bw'umwuga?": "Niba ibimenyetso byibasiye ubuzima bwawe bwa buri munsi.",
+"Ni lini niitafute msaada wa kitaalamu?": "Ikiwa dalili zinathiri maisha yako ya kila siku.",
+"Ni izihe nama zafasha umugabo wanjye kumfasha mu gihe cy'ihungabana ryo nyuma yo kubyara?": "Kumva neza ibibazo byawe, kukunganira mu mirimo y'urugo, no kukwereka urukundo.",
+"Ni ushauri gani unaweza kusaidia mume wangu kunisaidia wakati wa huzuni baada ya kujifungua?": "Kusikiliza matatizo yako, kukusaidia kazi za nyumbani, na kukuonyesha upendo.",
+"Ni gute inshuti zanjye zanyunganira mu gihe cy'ihungabana ryo nyuma yo kubyara?": "Kumva neza ibibazo byawe no kukunganira mu bikorwa bya buri munsi.",
+"Marafiki zangu zinaweza kunisaidiaje wakati wa huzuni baada ya kujifungua?": "Kusikiliza matatizo yako na kukusaidia katika shughuli za kila siku.",
+"Ni ryari nkwiye gushaka ubufasha bw'umwuga ku ihungabana ryo nyuma yo kubyara?": "Niba ibimenyetso byarushijeho kuba bibi cyangwa bidashira.",
+"Ni lini niende kwa daktari kuhusu huzuni baada ya kujifungua?": "Ikiwa dalili zinakuwa mbaya zaidi au haziondoki.",
+"Ni gute nshobora kuganiriza muganga ku bibazo byanjye by'ihungabana ryo nyuma yo kubyara?": "Kubwira muganga ibimenyetso ufite, uko wiyumva, n'uko bikugiraho ingaruka.",
+"Ninawezaje kuzungumza na daktari kuhusu matatizo yangu ya huzuni baada ya kujifungua?": "Mwambie daktari dalili ulizonazo, jinsi unavyohisi, na jinsi zinavyokuathiri.",
+"Ni ryari nkwiye kuganira n'umuganga ku byerekeye ihungabana ryo nyuma yo kubyara?": "Igihe cyose wumva ibimenyetso byiyongera cyangwa bidashira.",
+"Ni lini niweze kuzungumza na daktari kuhusu huzuni baada ya kujifungua?": "Wakati wowote unahisi dalili zinaongezeka au haziondoki.",
+"Ni izihe nama z'ubuzima zagufasha kurwanya ihungabana ryo nyuma yo kubyara?": "Kurya indyo yuzuye, gukora imyitozo ngororamubiri, no kuganira n'abandi babyeyi.",
+"Ni ushauri gani wa afya unaweza kusaidia kupambana na huzuni baada ya kujifungua?": "Kula chakula kamili, kufanya mazoezi, na kuzungumza na wazazi wengine.",
+"Ni izihe nama zafasha umuryango wanjye kumfasha mu gihe cy'ihungabana ryo nyuma yo kubyara?": "Kumva neza ibibazo byawe, kukunganira mu mirimo y'urugo, no kukwereka urukundo.",
+"Ni ushauri gani unaweza kusaidia familia yangu kunisaidia wakati wa huzuni baada ya kujifungua?": "Kusikiliza matatizo yako, kukusaidia kazi za nyumbani, na kukuonyesha upendo.",
+"Ni ryari nkwiye kuganira n'umugabo wanjye ku ihungabana ryo nyuma yo kubyara?": "Igihe cyose wumva ukeneye inkunga ye kandi utisanzuye.",
+"Ni lini niweze kuzungumza na mume wangu kuhusu huzuni baada ya kujifungua?": "Wakati wowote unahitaji msaada wake na hujisikii vizuri.",
+"Ni izihe nama z'ingenzi ku babyeyi bashya bafite ihungabana ryo nyuma yo kubyara?": "Gusaba ubufasha, kuganira n'abandi babyeyi, no kwita ku buzima bwawe.",
+"Ni ushauri gani muhimu kwa wazazi wapya walio na huzuni baada ya kujifungua?": "Kuomba msaada, kuzungumza na wazazi wengine, na kujitunza.",
+"Ni ryari nkwiye gutangira imyitozo nyuma yo kubyara?": "Nyuma yo kubona uburenganzira bwa muganga wawe.",
+"Ni lini niweze kuanza kufanya mazoezi baada ya kujifungua?": "Baada ya kupata ruhusa kutoka kwa daktari wako.",
+"Ni gute nshobora kwirinda kugwa mu gahinda k'ihungabana ryo nyuma yo kubyara?": "Kwitabira ibikorwa bishimishije, gukora imyitozo ngororamubiri, no kubona ubufasha igihe cyose ukeneye.",
+"Ninawezaje kuepuka huzuni baada ya kujifungua?": "Kushiriki katika shughuli za kufurahisha, kufanya mazoezi, na kupata msaada wakati wowote unahitaji.",
+"Ni gute umuryango wanjye wambera inkunga mu gihe cy'ihungabana ryo nyuma yo kubyara?": "Kumva ibibazo byawe no kukunganira mu mirimo y'urugo.",
+"Familia yangu inaweza kunisaidiaje wakati wa huzuni baada ya kujifungua?": "Kusikiliza matatizo yako na kukusaidia kazi za nyumbani.",
+"Ni izihe nama zafasha umugabo wanjye kumfasha mu gihe cy'ihungabana ryo nyuma yo kubyara?": "Kumva neza ibibazo byawe, kukunganira mu mirimo y'urugo, no kukwereka urukundo.",
+"Ni ushauri gani unaweza kusaidia mume wangu kunisaidia wakati wa huzuni baada ya kujifungua?": "Kusikiliza matatizo yako, kukusaidia kazi za nyumbani, na kukuonyesha upendo.",
+"Ni izihe nama zafasha umuryango wanjye kumfasha mu gihe cy'ihungabana ryo nyuma yo kubyara?": "Kumva neza ibibazo byawe, kukunganira mu mirimo y'urugo, no kukwereka urukundo.",
+"Ni ushauri gani unaweza kusaidia familia yangu kunisaidia wakati wa huzuni baada ya kujifungua?": "Kusikiliza matatizo yako, kukusaidia kazi za nyumbani, na kukuonyesha upendo.",
+"Ni izihe nama z'ubuzima zagufasha kurwanya ihungabana ryo nyuma yo kubyara?": "Kurya indyo yuzuye, gukora imyitozo ngororamubiri, no kuganira n'abandi babyeyi.",
+"Ni ushauri gani wa afya unaweza kusaidia kupambana na huzuni baada ya kujifungua?": "Kula chakula kamili, kufanya mazoezi, na kuzungumza na wazazi wengine.",
+"Ni ryari nkwiye kuganira n'umuganga ku byerekeye ihungabana ryo nyuma yo kubyara?": "Igihe cyose wumva ibimenyetso byiyongera cyangwa bidashira.",
+"Ni lini niweze kuzungumza na daktari kuhusu huzuni baada ya kujifungua?": "Wakati wowote unahisi dalili zinaongezeka au haziondoki.",
+"Ni izihe nama z'ingenzi ku babyeyi bashya bafite ihungabana ryo nyuma yo kubyara?": "Gusaba ubufasha, kuganira n'abandi babyeyi, no kwita ku buzima bwawe.",
+"Ni ushauri gani muhimu kwa wazazi wapya walio na huzuni baada ya kujifungua?": "Kuomba msaada, kuzungumza na wazazi wengine, na kujitunza.",
+"Ni gute nshobora kwirinda kugwa mu gahinda k'ihungabana ryo nyuma yo kubyara?": "Kwitabira ibikorwa bishimishije, gukora imyitozo ngororamubiri, no kubona ubufasha igihe cyose ukeneye.",
+"Ninawezaje kuepuka huzuni baada ya kujifungua?": "Kushiriki katika shughuli za kufurahisha, kufanya mazoezi, na kupata msaada wakati wowote unahitaji.",
+"Ni ryari nkwiye gushaka ubufasha bw'umwuga ku ihungabana ryo nyuma yo kubyara?": "Niba ibimenyetso byarushijeho kuba bibi cyangwa bidashira.",
+"Ni lini niende kwa daktari kuhusu huzuni baada ya kujifungua?": "Ikiwa dalili zinakuwa mbaya zaidi au haziondoki.",
+"Ni gute inshuti zanjye zanyunganira mu gihe cy'ihungabana ryo nyuma yo kubyara?": "Kumva neza ibibazo byawe no kukunganira mu bikorwa bya buri munsi.",
+"Marafiki zangu zinaweza kunisaidiaje wakati wa huzuni baada ya kujifungua?": "Kusikiliza matatizo yako na kukusaidia katika shughuli za kila siku.",
+"Ni izihe nama zagufasha kurwanya ihungabana ryo nyuma yo kubyara?": "Kuganira n'inshuti cyangwa umuryango, gukora imyitozo ngororamubiri, no kuruhuka bihagije.",
+"Ni ushauri gani unaweza kusaidia kupambana na huzuni baada ya kujifungua?": "Kuzungumza na marafiki au familia, kufanya mazoezi, na kupumzika vya kutosha.",
+
   
 };
 
@@ -71,41 +140,43 @@ function botResponse(userInput) {
   let response = "I'm sorry, I don't understand that.";
 
   for (const keyword in predefinedResponses) {
-    if (input.includes(keyword)) {
-      response = predefinedResponses[keyword];
-      break;
-    }
-  }
 
-  setTimeout(() => {
-    appendMessage(BOT_NAME, BOT_IMG, "left", response);
-  }, 1000);
+if (input.includes(keyword.toLowerCase())) {
+  response = predefinedResponses[keyword];
+  break;
+}
+}
+
+appendMessage(BOT_NAME, BOT_IMG, "left", response);
 }
 
 function appendMessage(name, img, side, text) {
-  const msgHTML = `
-    <div class="msg ${side}-msg">
-      <div class="msg-img" style="background-image: url(${img})"></div>
-      <div class="msg-bubble">
-        <div class="msg-info">
-          <div class="msg-info-name">${name}</div>
-          <div class="msg-info-time">${formatDate(new Date())}</div>
-        </div>
-        <div class="msg-text">${text}</div>
-      </div>
-    </div>
-  `;
+const msgHTML = `
+  <div class="msg ${side}-msg">
+    <div class="msg-img" style="background-image: url(${img})"></div>
 
-  msgerChat.insertAdjacentHTML("beforeend", msgHTML);
-  msgerChat.scrollTop += 500;
+    <div class="msg-bubble">
+      <div class="msg-info">
+        <div class="msg-info-name">${name}</div>
+        <div class="msg-info-time">${formatDate(new Date())}</div>
+      </div>
+
+      <div class="msg-text">${text}</div>
+    </div>
+  </div>
+`;
+
+msgerChat.insertAdjacentHTML("beforeend", msgHTML);
+msgerChat.scrollTop += 500;
 }
 
 function get(selector, root = document) {
-  return root.querySelector(selector);
+return root.querySelector(selector);
 }
 
 function formatDate(date) {
-  const h = "0" + date.getHours();
-  const m = "0" + date.getMinutes();
-  return `${h.slice(-2)}:${m.slice(-2)}`;
+const h = "0" + date.getHours();
+const m = "0" + date.getMinutes();
+
+return `${h.slice(-2)}:${m.slice(-2)}`;
 }
